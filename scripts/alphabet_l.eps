@@ -1,0 +1,92 @@
+%!
+
+<< /PageSize [368 568] >> setpagedevice
+
+%キャンバスの左上端を原点とする
+0 568 translate
+%座標の圧縮/伸張
+1 -1 scale
+
+newpath
+
+0 setgray
+20 setlinewidth
+
+%円を描くための変数と関数定義
+/ctrl 0.55229 def
+/topLeft {
+    /r exch def  % スタックから半径を取得し、変数 radius に代入
+    /ctp { r ctrl mul } def
+    /a { r neg 0 } def
+    /b { 0 ctp neg } def
+    /c { r ctp sub r neg } def
+    /d { r r neg } def
+    a rmoveto
+    b c d rcurveto
+    0 r rmoveto
+} def
+/topRight {
+    /r exch def  % スタックから半径を取得し、変数 radius に代入
+    /ctp { r ctrl mul } def
+    /a { r 0 } def
+    /b { 0 ctp neg } def
+    /c { r ctp sub neg r neg } def
+    /d { r neg r neg } def
+    a rmoveto
+    b c d rcurveto
+    0 r rmoveto
+} def
+/bottomLeft {
+    /r exch def  % スタックから半径を取得し、変数 radius に代入
+    /ctp { r ctrl mul } def
+    /a { r neg 0 } def
+    /b { 0 ctp } def
+    /c { r ctp sub r } def
+    /d { r r } def
+    a rmoveto
+    b c d rcurveto
+    0 r neg rmoveto
+} def
+/bottomRight {
+    /r exch def  % スタックから半径を取得し、変数 radius に代入
+    /ctp { r ctrl mul } def
+    /a { r 0 } def
+    /b { 0 ctp } def
+    /c { r ctp sub neg r } def
+    /d { r neg r } def
+    a rmoveto
+    b c d rcurveto
+    0 r neg rmoveto
+} def
+/circle {
+    /r exch def  % スタックから半径を取得し、変数 radius に代入
+    r topLeft
+    r topRight
+    r bottomLeft
+    r bottomRight
+} def
+
+%いくつかの座標と長さの定義
+/center { 184 284 } def
+/a0 { 100 100 } def
+/a1 { 268 100 } def
+/a2 { 100 200 } def
+/a3 { 268 200 } def
+/a4 { 100 368 } def
+/a5 { 268 368 } def
+/a6 { 100 468 } def
+/a7 { 268 468 } def
+/l1 100 def
+/l2 168 def
+
+
+%アルファベットの描画パート
+a0 moveto
+
+/radius 84 def
+l2 2 div 0 rmoveto
+0 l1 l2 add rlineto
+
+stroke
+
+showpage
