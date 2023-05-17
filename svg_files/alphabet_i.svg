@@ -2,9 +2,9 @@
 <svg width="29px" height="233px" viewBox="0 0 29 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>alphabet_i</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="alphabet_i" transform="translate(0.000000, 0.838000)">
-            <line x1="14.182" y1="64.162" x2="14.182" y2="232.162" id="Stroke-1" stroke="#000000" stroke-width="20"></line>
-            <path d="M28.284,14.142 C28.284,21.948 21.948,28.284 14.142,28.284 C6.336,28.284 0,21.948 0,14.142 C0,6.336 6.336,0 14.142,0 C21.948,0 28.284,6.336 28.284,14.142" id="Fill-2" fill="#000000"></path>
+        <g id="alphabet_i" transform="translate(0.000000, 0.838000)" fill="#000000" fill-rule="nonzero">
+            <polygon id="Stroke-1" points="24.182 64.162 24.182 232.162 4.182 232.162 4.182 64.162"></polygon>
+            <path d="M28.284,14.142 C28.284,21.948 21.948,28.284 14.142,28.284 C6.336,28.284 0,21.948 0,14.142 C0,6.336 6.336,-2.27373675e-13 14.142,-2.27373675e-13 C21.948,-2.27373675e-13 28.284,6.336 28.284,14.142" id="Fill-2"></path>
         </g>
     </g>
 </svg>

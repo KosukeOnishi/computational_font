@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="186px" height="196px" viewBox="0 0 186 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Stroke 1 3</title>
+    <title>alphabet_v</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polyline id="Stroke-1" stroke="#000000" stroke-width="20" points="9 5 93 173 177 5"></polyline>
+        <polygon id="alphabet_v" fill="#000000" fill-rule="nonzero" points="168.055728 0.527864045 185.944272 9.47213595 93 195.36068 0.05572809 9.47213595 17.9442719 0.527864045 93 150.638"></polygon>
     </g>
 </svg>
